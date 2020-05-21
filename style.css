@@ -1,0 +1,57 @@
+
+body {
+    background: url(images/rpsBackground.jpg);
+    background-size: cover;
+}
+
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chosen {
+    transform: scale(1.1);
+    border-color: blue;
+    border-style: solid;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+[data-key="rock"] {
+    content: url(/images/rock.png);
+    max-width: 20%;
+    max-height: 30%;
+}
+
+[data-key="paper"] {
+    content: url(images/paper.png);
+    max-width:10%;
+    max-height:10%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+[data-key="scissors"] {
+    content: url(images/scissors-cartoon.jpg);
+    max-width:10%;
+    max-height:10%;
+}
+
+.scores {
+    display: flex;
+}
+
+[data-key="player"] {
+    content: "Player: 0";
+    color: red;
+    font-family: 'MS Sans Serif';
+    width: 479px;
+        height: 16px;
+}
+
+[data-key="opponent"] {
+    content: "Opponent: 0";
+    color: red;
+}

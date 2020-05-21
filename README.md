@@ -1,2 +1,5 @@
 # js_script_learning
-repo to learn javascript
+A simple repo to showcase some of my journey into learning javascript,
+one of the key languages used in web development alongside html & css.
+This is an attempt of mine to build an interactive version of the 
+classic rock, paper, scissors game.
