@@ -1,7 +1,7 @@
 
 
 function playRound(e) {
-    const key = document.querySelector('div[data-key='+e.target.attributes[0].nodeValue+']');
+    const key = document.querySelector('img[data-key='+e.target.attributes[0].nodeValue+']');
     key.classList.add('chosen');
     setTimeout(function() {key.classList.remove('chosen');}, 100);
 }

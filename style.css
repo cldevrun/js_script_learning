@@ -5,11 +5,12 @@ body {
 }
 
 
+
 .container {
-    margin-top: 10%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-height: 80vh;
 }
 
 .chosen {
@@ -22,36 +23,44 @@ body {
 [data-key="rock"] {
     content: url(/images/rock.png);
     max-width: 20%;
-    max-height: 30%;
+    max-height: 20%;
+    position: fixed;
+    left: 20px;
 }
 
 [data-key="paper"] {
     content: url(images/paper.png);
-    max-width:10%;
-    max-height:10%;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width:20%;
+    max-height:20%;
+    position: fixed;
 }
 
 [data-key="scissors"] {
     content: url(images/scissors-cartoon.jpg);
-    max-width:10%;
-    max-height:10%;
+    max-width:20%;
+    max-height:20%;
+    position: fixed;
+    right: 20px;
 }
 
 .scores {
     display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 30px;
+    position: relative;
 }
 
 [data-key="player"] {
     content: "Player: 0";
     color: red;
     font-family: 'MS Sans Serif';
-    width: 479px;
-        height: 16px;
+    font-weight: bold;
+    border-style: solid;
 }
 
 [data-key="opponent"] {
     content: "Opponent: 0";
-    color: red;
+    color: blue;
+    border-style: solid;
 }
