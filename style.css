@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 80vh;
+    min-height: 50vh;
 }
 
 .chosen {
@@ -25,7 +25,7 @@ body {
     max-width: 20%;
     max-height: 20%;
     position: fixed;
-    left: 20px;
+    left: 100px;
 }
 
 [data-key="paper"] {
@@ -40,27 +40,45 @@ body {
     max-width:20%;
     max-height:20%;
     position: fixed;
-    right: 20px;
+    right: 100px;
+}
+
+.outcomes {
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+[data-key="outcome"] {
+    color: white;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
 .scores {
-    display: flex;
     justify-content: center;
-    margin-top: 1%;
+    display: flex;
     font-size: 30px;
-    position: relative;
+    font-weight: bold;
+    color: pink;
 }
 
 [data-key="player"] {
-    content: "Player: 0";
     color: red;
-    font-family: 'MS Sans Serif';
-    font-weight: bold;
+    border-color: pink;
     border-style: solid;
+    border-width: 5px;
+    padding: 0px 35px;
+    margin-left: 10px;
 }
 
 [data-key="opponent"] {
-    content: "Opponent: 0";
     color: blue;
+    border-color: pink;
     border-style: solid;
+    border-width: 5px;
+    padding: 0px 35px;
+    margin-right: 10px;
 }
